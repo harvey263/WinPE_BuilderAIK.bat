@@ -20,4 +20,4 @@ Once all of the files are in place, you can create a custom image by running Bat
 - Load REG hives
 - Add DRIVERS
 
-You can run these options individually, but keep in mind that one is dependent on the other.  The script tries to check for error states like "You can't mount an image until you've created a working directory" or "You can't add files until you've mounted the image".  Comment if you come across a state I haven't accounted for.  Only x86 images are supported in this script so make sure your custom drivers and files are compatible.
+You can run these options individually, but keep in mind that one is dependent on the other.  The script tries to check for error states like "You can't mount an image until you've created a working directory" or "You can't add files until you've mounted the image".  Comment if you come across a state I haven't accounted for.  Only x86 images are supported in this script so make sure your custom files are compatible.
