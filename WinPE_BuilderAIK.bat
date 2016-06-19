@@ -10,7 +10,6 @@ ENDLOCAL
 SET CURDIR=%~dp0\
 title WinPE_BuilderAIK
 SETLOCAL ENABLEDELAYEDEXPANSION
-IF NOT EXIST "%CURDIR%\WinPE_Temp" md "%CURDIR%\WinPE_Temp"
 ::-----------------------------------------------------------------------
 "%WINDIR%\system32\cacls.exe" "%WINDIR%\system32\config\system" >nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (echo Elevating... & GOTO UAC1) else (GOTO UAC2)
@@ -28,6 +27,7 @@ echo. & echo Windows 7 AIK does not exist. & echo. & pause & GOTO EOF
 IF NOT EXIST "%CURDIR%\WinPE_AIK7-DRIVERS" md "%CURDIR%\WinPE_AIK7-DRIVERS"
 IF NOT EXIST "%CURDIR%\WinPE_AIK7-FILES" md "%CURDIR%\WinPE_AIK7-FILES"
 IF NOT EXIST "%CURDIR%\WinPE_AIK7-REG" md "%CURDIR%\WinPE_AIK7-REG"
+IF NOT EXIST "%CURDIR%\WinPE_Temp" md "%CURDIR%\WinPE_Temp"
 IF EXIST "%CURDIR%\WinPE_Temp\DELISOAIK.txt" del /q /f "%CURDIR%\WinPE_Temp\DELISOAIK.txt"
 IF EXIST "%CURDIR%\WinPE_Temp\LISTVOLAIK.txt" del /q /f "%CURDIR%\WinPE_Temp\LISTVOLAIK.txt"
 IF EXIST "%CURDIR%\WinPE_Temp\FORMATVOLAIK.txt" del /q /f "%CURDIR%\WinPE_Temp\FORMATVOLAIK.txt"
