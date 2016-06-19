@@ -8,7 +8,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=5753
 - Create a working folder called "WinPE_Builder" and put "WinPE_BuilderAIK.bat" inside of it.
 - On first run the batch will create 4 new folders; WinPE_AIK7-DRIVERS, WinPE_AIK7-FILES, WinPE_AIK7-REG and WinPE_Temp.
 - The "WinPE_AIK7-DRIVERS" folder should contain fully extracted drivers that will be injected into your image such as network and video drivers.
-- The "WinPE_AIK7-FILES" folder should contain files intended to be added to the X:\Windows\System32 direcotry of your WinPE image such as startnet.cmd, winpe.bmp, imagex.exe, other scripts...
+- The "WinPE_AIK7-FILES" folder should contain files to be copied to the X:\Windows\System32 direcotry of your WinPE image such as startnet.cmd, winpe.bmp, imagex.exe, other scripts...
 - The "WinPE_AIK7-REG" folder should contain .reg files for customizing the PE environment such as command console settings.
 - If you don't want to customize anything leave the above folders empty.
 - The "WinPE_Temp" folder is what it sounds like, temp files are written here.
