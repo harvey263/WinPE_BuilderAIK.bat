@@ -15,9 +15,10 @@ https://www.microsoft.com/en-us/download/details.aspx?id=5753
 
 Once all of the files are in place, you can create a custom image by running Batch Mode then Make ISO or USB media.  Batch Mode runs the other options in succession: 
 - Create Working Directory
-- Mount/Unmount image
+- Mount image
 - Add FILES to image
 - Load REG hives
 - Add DRIVERS
+- Unmount image
 
 You can run these options individually, but keep in mind that one is dependent on the other.  The script tries to check for error states like "You can't mount an image until you've created a working directory" or "You can't add files until you've mounted the image".  Comment if you come across a state I haven't accounted for.  Only x86 images are supported in this script.
